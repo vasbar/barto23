@@ -6,7 +6,7 @@ def count_letters(text1):
     text1 = "".join(text1)
     text2 = set(text1)
     for c in text1:
-        if c.isalpha() == True:
+        if c.isalpha():
             if c in d1:
                 d1[c] += 1
             else:
