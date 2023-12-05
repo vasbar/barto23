@@ -1,10 +1,8 @@
 # TODO Напишите функцию для поиска индекса товара
 def idxs(spis, tovar):
-    for i in range(len(spis)):
-        if tovar == spis[i]:
+    for i, current_tovar in enumerate(spis):
+        if tovar == current_tovar:
             return i
-        if i == (len(spis) - 1):
-            return None
 
 
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
